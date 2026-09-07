@@ -1,0 +1,40 @@
+# Single source of truth for the platform. Every module reads from here; nothing is hard-coded.
+seed: 42
+
+loader:
+  encodings: [utf-8-sig, utf-8, cp1254, iso-8859-9, latin-1]
+  delimiters: [",", ";", "\t", "|"]
+  sample_bytes: 65536
+  max_rows: 500000
+
+validation:
+  max_column_name_length: 64
+  min_rows_for_training: 30
+  min_samples_per_class: 5
+  high_cardinality_ratio: 0.9     # unique/rows above this on an object column -> likely an ID
+  multicollinearity_threshold: 0.95
+
+cleaning:
+  history_depth: 15
+  outlier:
+    iqr_factor: 1.5
+    zscore_threshold: 3.0
+
+modeling:
+  test_size: 0.2
+  cv_folds: 5
+  classification_metric: f1_macro
+  regression_metric: r2
+  models:
+    classification: [logistic_regression, random_forest, hist_gradient_boosting]
+    regression: [ridge, random_forest, hist_gradient_boosting]
+
+stats:
+  alpha: 0.05
+  kmeans_max_k: 8
+  isolation_forest_contamination: 0.05
+
+agent:
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_iterations: 12

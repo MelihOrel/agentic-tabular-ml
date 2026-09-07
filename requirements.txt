@@ -1,0 +1,12 @@
+# Streamlit Community Cloud installs from this file.
+# Local development: pip install -e ".[app,api,dev]"
+-e .
+streamlit>=1.30
+plotly>=5.18
+pandas>=2.0
+numpy>=1.24
+scipy>=1.11
+scikit-learn>=1.3
+pyyaml>=6.0
+openpyxl>=3.1
+joblib>=1.3
