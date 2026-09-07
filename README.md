@@ -4,7 +4,7 @@ A no-code tabular ML platform where an LLM agent is a **constrained operator**, 
 whole product. Load a messy spreadsheet, clean it, train models, serve them — and let an
 agent do the same work through the same guarded tools, with every step logged and undoable.
 
-[![CI](https://github.com/MelihOrel/agentic-tabular-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/MelihOrel/agentic-tabular-ml/actions/workflows/ci.yml)
+
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
