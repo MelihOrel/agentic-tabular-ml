@@ -8,7 +8,7 @@ agent do the same work through the same guarded tools, with every step logged an
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-**Live demo:** _(Streamlit Community Cloud link goes here once deployed)_
+**Live demo:** _(not ready yet..)_
 
 ---
 
